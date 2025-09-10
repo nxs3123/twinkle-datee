@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamari Pehli Date 💕</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      color: #333;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #b20047;
+    }
+    p {
+      font-size: 1.3em;
+      margin: 20px 0;
+    }
+    .button-container {
+      margin-top: 30px;
+    }
+    button {
+      background: #ff4d79;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e6005c;
+      transform: scale(1.1);
+    }
+    #message {
+      margin-top: 40px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #4a004a;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h1>Hey Twinkle ❤️</h1>
+  <p>Ab hum officially <strong>Mr. & Mrs.</strong> ban gaye hai...  
+     toh socha kyun na ek <em>pehli date after shaadi</em> plan karein? 🥂✨</p>
+  <p>Kya tum meri saath chalo gi is weekend pe ek romantic dinner date par? 🌙🍷💖</p>
+
+  <div class="button-container">
+    <button onclick="sayYes()">Yes 💕</button>
+    <button onclick="sayNo()">No 🙈</button>
+  </div>
+
+  <div id="message"></div>
+
+  <script>
+    function sayYes() {
+      document.getElementById("message").style.display = "block";
+      document.getElementById("message").innerHTML = 
+        "Yaaay! 🥰 Tumhari haan hi meri duniya hai. Ab taiyaar ho jao ek unforgettable date ke liye 💖✨";
+    }
+    function sayNo() {
+      document.getElementById("message").style.display = "block";
+      document.getElementById("message").innerHTML = 
+        "Arey jaan 😢 no ka option hai hi nahi... kyunki ab tum meri wife ho 💍😉";
+    }
+  </script>
+</body>
+</html>
